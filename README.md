@@ -101,15 +101,9 @@ This project uses **Dagger** to handle dependency injection, making the app modu
 | Light Mode | Dark Mode |
 |------------|-----------|
 | ![Light Mode](https://github.com/user-attachments/assets/cfb02d34-562f-484d-b44a-6d7e3b4fea1a) | ![Dark Mode](https://github.com/user-attachments/assets/eedd0d4b-9a3c-4143-8c72-0ddbd2371eac) |
-| ![Light Mode](![image](https://github.com/user-attachments/assets/a6efc01c-e2e5-440b-8231-a46361d0e32f)
-) | ![Dark Mode](![image](https://github.com/user-attachments/assets/a3ecd7b5-9e65-4444-8eb2-ef968cd3ffda)
-) |
-| ![Light Mode](![image](https://github.com/user-attachments/assets/cc56caf8-32da-414e-aaf5-162d741e3167)
-) | ![Dark Mode](![image](https://github.com/user-attachments/assets/9bf64d43-1edd-4860-bc5b-93bc8ba509f2)
-) |
-| ![Light Mode](![image](https://github.com/user-attachments/assets/ecba7af0-05e9-47c1-beea-561655142e7e)
-) | ![Dark Mode](![image](https://github.com/user-attachments/assets/28da8373-559c-4fd5-a187-c10f0e04b64e)
-) |
+| ![Light Mode](https://github.com/user-attachments/assets/a6efc01c-e2e5-440b-8231-a46361d0e32f) | ![Dark Mode](https://github.com/user-attachments/assets/a3ecd7b5-9e65-4444-8eb2-ef968cd3ffda) |
+| ![Light Mode](https://github.com/user-attachments/assets/cc56caf8-32da-414e-aaf5-162d741e3167) | ![Dark Mode](https://github.com/user-attachments/assets/9bf64d43-1edd-4860-bc5b-93bc8ba509f2) |
+| ![Light Mode](https://github.com/user-attachments/assets/ecba7af0-05e9-47c1-beea-561655142e7e) | ![Dark Mode](https://github.com/user-attachments/assets/28da8373-559c-4fd5-a187-c10f0e04b64e) |
 
 
 
