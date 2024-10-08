@@ -1,8 +1,6 @@
 # Todo List Application
 
-![Project Logo](![image](https://github.com/user-attachments/assets/2ed2161e-a578-48c4-9ffe-4d480c7add9b)
-
-) <!-- Add project logo if you have one -->
+<img src="https://github.com/user-attachments/assets/2ed2161e-a578-48c4-9ffe-4d480c7add9b" alt="Project Logo" width="200" />
 
 ## Table of Contents
 
