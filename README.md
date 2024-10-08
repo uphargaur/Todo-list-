@@ -95,8 +95,17 @@ This project follows the **MVVM (Model-View-ViewModel)** architecture pattern, w
 This project uses **Dagger** to handle dependency injection, making the app modular, easier to test, and more maintainable. Dependency injection allows for cleaner code by decoupling dependencies from the components that use them.
 
 ## Screenshots
-![image](https://github.com/user-attachments/assets/cfb02d34-562f-484d-b44a-6d7e3b4fea1a)
-![image](https://github.com/user-attachments/assets/eedd0d4b-9a3c-4143-8c72-0ddbd2371eac)
+
+### Light Mode & Dark Mode Comparison
+
+| Light Mode | Dark Mode |
+|------------|-----------|
+| ![Light Mode](https://github.com/user-attachments/assets/cfb02d34-562f-484d-b44a-6d7e3b4fea1a) | ![Dark Mode]([path_to_dark_mode_image](https://github.com/user-attachments/assets/eedd0d4b-9a3c-4143-8c72-0ddbd2371eac)) |
+| ![Light Mode](https://github.com/user-attachments/assets/cfb02d34-562f-484d-b44a-6d7e3b4fea1a) | ![Dark Mode]([path_to_dark_mode_image](https://github.com/user-attachments/assets/eedd0d4b-9a3c-4143-8c72-0ddbd2371eac)) |
+| ![Light Mode](https://github.com/user-attachments/assets/cfb02d34-562f-484d-b44a-6d7e3b4fea1a) | ![Dark Mode]([path_to_dark_mode_image](https://github.com/user-attachments/assets/eedd0d4b-9a3c-4143-8c72-0ddbd2371eac)) |
+| ![Light Mode](https://github.com/user-attachments/assets/cfb02d34-562f-484d-b44a-6d7e3b4fea1a) | ![Dark Mode]([path_to_dark_mode_image](https://github.com/user-attachments/assets/eedd0d4b-9a3c-4143-8c72-0ddbd2371eac)) |
+
+
 ![image](https://github.com/user-attachments/assets/e6000e1c-43ac-4a0e-ac80-1aed0a58032a)
 
 ![image](https://github.com/user-attachments/assets/79826eb6-0aaf-443e-bd09-ea9c6ad01a03)
