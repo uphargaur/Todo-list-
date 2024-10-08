@@ -3,21 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:allowBackup="true"
-        android:name=".ui.theme.di.MyApplication"
+        android:name="com.example.todolistbuyhatke.ui.theme.di.MyApplication"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TODOListpratillipi"
+        android:allowBackup="false"
+        android:theme="@style/Theme.todobuyhatke"
         tools:targetApi="31">
         <activity
-            android:name=".ui.theme.screen.MainActivity"
+            android:name="com.example.todolistbuyhatke.ui.theme.screen.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.TODOListpratillipi">
+            android:theme="@style/Theme.todobuyhatke">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

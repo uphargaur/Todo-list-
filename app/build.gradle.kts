@@ -1,18 +1,18 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id ("kotlin-kapt")
-    id ("kotlin-parcelize")
-    id ("com.google.dagger.hilt.android")
-
+    id("com.google.devtools.ksp") version "1.9.0-1.0.13" // Add KSP plugin
+    id("kotlin-parcelize")
+    id("com.google.dagger.hilt.android")
 }
 
+
 android {
-    namespace = "com.example.todolistpratillipi"
+    namespace = "com.example.todobuyhatke"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.todolistpratillipi"
+        applicationId = "com.example.todobuyhatke"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -65,6 +65,8 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.runtime.livedata)
+    implementation(libs.play.services.maps)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
@@ -73,23 +75,28 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    // Dagger Hilt
+    implementation("com.google.dagger:hilt-android:2.48")
+    ksp("com.google.dagger:hilt-compiler:2.48")
+    implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
 
-
-    //dagger
-    implementation ("com.google.dagger:hilt-android:2.48")
-    kapt ("com.google.dagger:hilt-compiler:2.48")
-    kapt("com.google.dagger:hilt-android-compiler:2.48")
-    implementation ("androidx.hilt:hilt-navigation-compose:1.0.0")
-    implementation ("androidx.room:room-runtime:2.5.2" ) // Room runtime
-    kapt ("androidx.room:room-compiler:2.5.2")  // Room annotation processor for generating classes
+    // Room dependencies with KSP
+    implementation("androidx.room:room-runtime:2.5.2")  // Room runtime
+    ksp("androidx.room:room-compiler:2.5.2")  // Room annotation processor for generating classes
 
     // Optional - Kotlin Extensions and Coroutines support for Room
-    implementation ("androidx.room:room-ktx:2.5.2")
+    implementation("androidx.room:room-ktx:2.5.2")
 
     // Paging
-    implementation ("androidx.paging:paging-runtime:3.1.1")
+    implementation("androidx.paging:paging-runtime:3.1.1")
 
     // Lifecycle
-    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.4.0")
-    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
+
+
+    // https://mvnrepository.com/artifact/com.google.accompanist/accompanist-swiperefresh
+    implementation("com.google.accompanist:accompanist-swiperefresh:0.36.0")
+
+
 }

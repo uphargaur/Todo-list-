@@ -1,4 +1,4 @@
-package com.example.todolistpratillipi.ui.theme.bussiness
+package com.example.todolistbuyhatke.ui.theme.bussiness
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
@@ -7,7 +7,10 @@ import androidx.room.PrimaryKey
 data class Task(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val taskName: String,
+    val description: String = "",
+    val dueDate: String = "",
+    val priorityLevel: Int = 1,
     val isCompleted: Boolean = false,
-    val orderIndex: Int = 0 // for ordering tasks
 )
+
 

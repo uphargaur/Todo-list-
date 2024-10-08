@@ -1,13 +1,11 @@
-package com.example.todolistpratillipi.ui.theme.bussiness
+package com.example.todolistbuyhatke.ui.theme.bussiness
 
-import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.todolistpratillipi.ui.theme.bussiness.Task
-import com.example.todolistpratillipi.ui.theme.bussiness.TaskDao
+import android.content.Context
 
-@Database(entities = [Task::class], version = 1, exportSchema = false)
+@Database(entities = [Task::class], version = 2, exportSchema = false)
 abstract class TaskDatabase : RoomDatabase() {
 
     abstract fun taskDao(): TaskDao
@@ -21,10 +19,8 @@ abstract class TaskDatabase : RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     TaskDatabase::class.java,
-                    "task_database"
-                )
-                    .fallbackToDestructiveMigration() // Handle migration strategy
-                    .build()
+                    "TaskDatabase.db"
+                ).build()
                 INSTANCE = instance
                 instance
             }

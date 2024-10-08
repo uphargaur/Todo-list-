@@ -1,13 +1,10 @@
-package com.example.todolistpratillipi.ui.theme.screen
+package com.example.todolistbuyhatke.ui.theme.screen
 
-
-import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.todolistpratillipi.ui.theme.bussiness.Task
-import com.example.todolistpratillipi.ui.theme.bussiness.TaskRepository
+import com.example.todolistbuyhatke.ui.theme.bussiness.Task
+import com.example.todolistbuyhatke.ui.theme.bussiness.TaskRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
-import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
@@ -15,19 +12,18 @@ import javax.inject.Inject
 
 @HiltViewModel
 class TaskViewModel @Inject constructor(
-    private val taskRepository: TaskRepository,
-    @ApplicationContext private val context: Context
+    private val taskRepository: TaskRepository
 ) : ViewModel() {
 
     // A flow representing the current list of tasks
     private val _allTasks = MutableStateFlow<List<Task>>(emptyList())
     val allTasks: StateFlow<List<Task>> get() = _allTasks
 
+
     // Add a new task to the repository
     fun addTask(task: Task) {
         viewModelScope.launch {
-            taskRepository.addTask(task)
-            fetchTasks()
+            taskRepository.insertTask(task)  // Changed method name to match repository
         }
     }
 
@@ -35,16 +31,21 @@ class TaskViewModel @Inject constructor(
     fun deleteTask(task: Task) {
         viewModelScope.launch {
             taskRepository.deleteTask(task)
-            fetchTasks()
+
         }
     }
+    fun updateTask(task: Task) = viewModelScope.launch {
+        taskRepository.updateTask(task)
+    }
 
-    // Fetch all tasks from the repository
-    private fun fetchTasks() {
+    // Fetch all tasks from the repository and collect updates
+     fun fetchTasks() {
         viewModelScope.launch {
-            val tasks = taskRepository.getAllTasks()
-            _allTasks.value = tasks
+            _allTasks.value = taskRepository.getAllTasks() // Fetching tasks from repository
         }
+    }
+    fun setTasks(tasks: List<Task>) {
+        _allTasks.value = tasks
     }
 
     // Init block to load tasks when ViewModel is created

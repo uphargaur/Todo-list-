@@ -1,4 +1,4 @@
-package com.example.todolistpratillipi.ui.theme.di
+package com.example.todolistbuyhatke.ui.theme.di
 
 
 import android.app.Application
