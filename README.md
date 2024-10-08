@@ -1,6 +1,7 @@
 # Todo List Application
 
-![Project Logo](path/to/logo.png) <!-- Add project logo if you have one -->
+![Project Logo](![image](https://github.com/user-attachments/assets/8fc2cfd9-c75d-4a09-8c59-786a5b741bc8)
+) <!-- Add project logo if you have one -->
 
 ## Table of Contents
 
@@ -68,30 +69,42 @@ To run this project locally, follow these steps:
 
 This project follows the **MVVM (Model-View-ViewModel)** architecture pattern, which separates the app into three main components:
 
-- **Model**: Manages the app's data layer and business logic (e.g., Room Database).
+- **Model**: Manages the apps data layer and business logic (e.g., Room Database).
 - **ViewModel**: Stores and manages UI-related data, fetching tasks and handling user actions.
 - **View**: The UI layer, built using Jetpack Compose, that observes ViewModel state changes and displays tasks to the user.
 
 ### Folder Structure
 
-```bash
-.
-├── data
-│   ├── dao             # Room Database DAO
-│   ├── entities        # Task entity data model
-│   └── repository      # Repository that handles data operations
-├── di                  # Dagger dependency injection modules
-├── ui
-│   ├── screens         # Compose screens (TaskListScreen, AddTaskScreen)
-│   ├── theme           # App theme and styles
-│   └── viewmodels      # ViewModels for managing app state
-└── utils               # Utility classes and helper functions
+      ```bash
+      .
+      ├── data
+      │   ├── dao             # Room Database DAO
+      │   ├── entities        # Task entity data model
+      │   └── repository      # Repository that handles data operations
+      ├── di                  # Dagger dependency injection modules
+      ├── ui
+      │   ├── screens         # Compose screens (TaskListScreen, AddTaskScreen)
+      │   ├── theme           # App theme and styles
+      │   └── viewmodels      # ViewModels for managing app state
+      └── utils               # Utility classes and helper functions
 
 
 
 ## Dependency Injection with Dagger
 
 This project uses **Dagger** to handle dependency injection, making the app modular, easier to test, and more maintainable. Dependency injection allows for cleaner code by decoupling dependencies from the components that use them.
+
+## Screenshots
+![image](https://github.com/user-attachments/assets/cfb02d34-562f-484d-b44a-6d7e3b4fea1a)
+![image](https://github.com/user-attachments/assets/eedd0d4b-9a3c-4143-8c72-0ddbd2371eac)
+![image](https://github.com/user-attachments/assets/e6000e1c-43ac-4a0e-ac80-1aed0a58032a)
+
+![image](https://github.com/user-attachments/assets/79826eb6-0aaf-443e-bd09-ea9c6ad01a03)
+![image](https://github.com/user-attachments/assets/6a79a8f8-8b34-449e-9c37-867c791d5f30)
+![image](https://github.com/user-attachments/assets/02c595ae-7a92-4dda-aaf3-b0cf6995a3b1)
+
+
+
 
 ### Setting Up Dagger in the Project
 
@@ -115,9 +128,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 If you have any questions or feedback, feel free to contact:
 
-- **Author**: Your Name
-- **Email**: your.email@example.com
-- **GitHub**: [https://github.com/yourusername](https://github.com/yourusername)
+- **Author**: Uphar gaur
+- **Email**: uphargaur@gmail.com 
+- **GitHub**: [https://github.com/yourusername](https://github.com/uphargaur)
 
 ---
 
