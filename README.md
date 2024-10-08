@@ -108,20 +108,6 @@ This project uses **Dagger** to handle dependency injection, making the app modu
 
 
 
-
-
-### Setting Up Dagger in the Project
-
-1. **Add Dagger Dependencies**:
-
-   Add the following dependencies to your `build.gradle` file (app-level):
-
-   ```gradle
-   dependencies {
-       implementation 'com.google.dagger:dagger:2.x'  // Replace 'x' with the latest version
-       kapt 'com.google.dagger:dagger-compiler:2.x'
-   }
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
