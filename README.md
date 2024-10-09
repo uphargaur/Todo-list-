@@ -120,7 +120,7 @@ If you have any questions or feedback, feel free to contact:
 
 - **Author**: Uphar gaur
 - **Email**: uphargaur@gmail.com 
-- **GitHub**: [https://github.com/yourusername](https://github.com/uphargaur)
+- **GitHub**: [https://github.com/uphargaur](https://github.com/uphargaur)
 
 ---
 
